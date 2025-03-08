@@ -27,31 +27,31 @@ class LoadingScreen {
                 title: "Imprisoned XII",
                 artist: "Ave Mujica",
                 cover: "assets/album-covers/109951170535267881.jpg",
-                file: "assets/music/iii.mp3"
+                file: "iii.mp3"
             },
             {
                 title: "春日影 (MyGO!!!!! ver.)",
                 artist: "MyGO!!!!!",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/s3s89/13/3955596740.png",
-                file: "assets/music/cry.mp3"
+                file: "cry.mp3"
             },
             {
                 title: "迷星叫",
                 artist: "MyGO!!!!!",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/s3s89/13/3955596740.png",
-                file: "assets/music/mxj.mp3"
+                file: "mxj.mp3"
             },
             {
                 title: "迷路日々",
                 artist: "MyGO!!!!!",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/s3s89/13/3955596740.png",
-                file: "assets/music/mlr.mp3"
+                file: "mlr.mp3"
             },
             {
                 title: "八月のif-",
                 artist: "Poppin'Party",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/10/80/3178356656.jpg",
-                file: "assets/music/byy.mp3"
+                file: "byy.mp3"
             }
             
             // 可以添加更多歌曲
