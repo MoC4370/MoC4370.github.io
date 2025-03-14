@@ -183,10 +183,6 @@ class LoadingScreen {
 
     simulateFileLoading() {
         const testFiles = [
-            'models/player/custom/mygo/sato.mdl',
-            'materials/models/player/mygo/sato.vmt',
-            'sound/music/mygo/hell_or_hell.mp3',
-            'maps/mygo_studio.bsp'
         ];
         
         this.totalFiles = testFiles.length;
