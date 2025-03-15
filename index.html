@@ -1,99 +1,173 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>BanG Dream! MyGO!!!! Server Loading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务器加载中...</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- 添加 Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+    <div class="time-bar glass-effect">
+        <div class="time-info">
+            <div class="current-time">
+                <i class="fas fa-clock"></i>
+                <span>当前时间：<span id="current-time">00:00:00</span></span>
+            </div>
+            <div class="separator"></div>
+            <div class="elapsed-time">
+                <i class="fas fa-hourglass-half"></i>
+                <span>加载时间：<span id="elapsed-time">00:00:00</span></span>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <!-- 背景轮播 -->
-        <div class="background-slideshow"></div>
-        <div class="background-overlay"></div>
-        <div class="glow-effect"></div>
-        
-        <!-- 服务器信息 -->
-        <div class="server-info">
-            <h1 class="server-name">ZSY-Backroom后室生存RP服务器</h1>
-            <div class="server-details">
-                <p class="ip">加QQ群：983443539</p>
-                <p class="player-count">服务器状态稳定 <span id="playerCount">
+        <div class="left-section glass-effect">
+            <div class="rules">
+                <h3>规则</h3>
+                <div class="rule-item fade-in-up" style="animation-delay: 0.1s">
+                    <div class="rule-number">1</div>
+                    <p>禁止使用作弊程序</p>
+                </div>
+                <div class="rule-item fade-in-up" style="animation-delay: 0.2s">
+                    <div class="rule-number">2</div>
+                    <p>禁止恶意卡服</p>
+                </div>
+                <div class="rule-item fade-in-up" style="animation-delay: 0.3s">
+                    <div class="rule-number">3</div>
+                    <p>禁止骚扰他人</p>
+                </div>
+                <div class="rule-item fade-in-up" style="animation-delay: 0.4s">
+                    <div class="rule-number">4</div>
+                    <p>进入游戏看!motd</p>
+                </div>
             </div>
-        </div>
 
-        <!-- 装饰元素 -->
-        <div class="decoration">
-            <div class="guitar-model"></div>
-        </div>
-
-        <!-- 服务器信息 -->
-        <!-- 现有的logo容器 -->
-        <div class="logo-container">
-            <img src="mjc.png" alt="SDW" class="main-logo">
-            <div class="logo-particles"></div>
-        </div>
-
-        <!-- 加载进度条 -->
-        <div class="loading-container">
-            <div class="progress-ring">
-                <svg class="progress-ring__circle" width="200" height="200">
-                    <circle class="progress-ring__circle-bg" r="90" cx="100" cy="100"/>
-                    <circle class="progress-ring__circle-progress" r="90" cx="100" cy="100"/>
-                </svg>
-                <div class="progress-text">0%</div>
+            <div class="description fade-in-up" style="animation-delay: 0.5s">
+                <h3>亲爱的玩家你好</h3>
+                <p>欢迎来到我们的服务器！<br>
+                此服务器为GMOD的一个<br>
+                后室主题的生存类半RP服务器<br>
+                不了解玩法可以看motd<br>
+                或者wiki百科查看相关内容<br>
+                感谢各位玩家们的支持<br><br>
+                加群订阅合集加载速度更快哦!</p>
             </div>
-            <!-- 添加文件加载信息 -->
-            <div class="file-loading-info">
-                <div class="current-file" id="currentFile">正在加载...</div>
-                <div class="file-count" id="fileCount">0 / 0 个文件</div>
-            </div>
-        </div>
 
-        <!-- 底部信息 -->
-        <div class="bottom-info">
-            <div class="loading-text">
-                <p class="jp">読み込み中...</p>
-                <p class="en">Now Loading...</p>
-            </div>
-            <div class="tips">
-                <p class="tip-text" id="tipText">提示: 按 TAB 键可以查看计分板</p>
-            </div>
-        </div>
-
-        <!-- 社交媒体链接 -->
-        <div class="social-links">
-            <a href="#" class="social-link">Discord</a>
-            <a href="#" class="social-link">Bilibili</a>
-            <a href="#" class="social-link">QQ群</a>
-        </div>
-
-        <!-- 音乐面板 -->
-        <div class="music-panel">
-            <div class="music-info">
-                <div class="album-cover">
-                    <img src="assets/album-cover.jpg" alt="Album Cover" id="albumCover">
-                    <div class="play-button">
-                        <i class="fas fa-play" id="playPauseIcon"></i>
+            <div class="contact-info fade-in-up" style="animation-delay: 0.6s">
+                <h3>联系方式</h3>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <i class="fab fa-qq"></i>
+                        <span>QQ群：983443539</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-qq"></i>
+                        <span>腐竹QQ：3545351570</span>
                     </div>
                 </div>
-                <div class="track-info">
-                    <div class="track-name" id="trackName">HELL! or HELL?</div>
-                    <div class="artist-name" id="artistName">Ave Mujica</div>
+            </div>
+        </div>
+
+        <div class="center-section glass-effect">
+            <div class="server-info fade-in-up" style="animation-delay: 0.2s">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-map"></i>
+                        <h3>地图</h3>
+                        <p id="mapname" class="highlight">gm_flatgrass</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <h3>最大人数</h3>
+                        <p class="highlight"><span id="players">64人</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="music-controls">
-                <div class="progress-bar">
-                    <div class="progress" id="musicProgress"></div>
+
+            <div class="server-logo fade-in-up" style="animation-delay: 0.3s">
+                <div class="logo-container">
+                    
+                    <i class="fas fa-server logo-icon"></i>
                 </div>
-                <div class="time-info">
-                    <span id="currentTime">0:00</span>
-                    <span id="totalTime">3:45</span>
+            </div>
+
+            <div class="main-title fade-in-up" style="animation-delay: 0.4s">
+                <h4>欢迎来到</h4>
+                <h1 id="servername" class="glow">ZSY Backroom生存RP服务器</h1>
+                <div class="server-tags">
+                    <span class="tag"><i class="fas fa-shield-alt"></i> 全能管理</span>
+                    <span class="tag"><i class="fas fa-tachometer-alt"></i> 新手帮助</span>
+                    <span class="tag"><i class="fas fa-clock"></i> 自动重启</span>
+                </div>
+            </div>
+
+            <div class="connection-info fade-in-up" style="animation-delay: 0.5s">
+                <div class="connection-status">
+                    <div class="status-indicator"></div>
+                    <span>连接状态良好</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section glass-effect">
+            <div class="staff">
+                <h3 class="text-flicker">管理团队</h3>
+                <div class="staff-member fade-in-up" style="animation-delay: 0.1s">
+                    <div class="avatar">
+                        <img src="https://avatars.cloudflare.steamstatic.com/15c985a195f720a457a8cd874b9360b6a98b0d19_full.jpg" alt="GOAT666">
+                    </div>
+                    <div class="staff-info">
+                        <h4>atHOH</h4>
+                        <p class="role">服主</p>
+                    </div>
+                </div>
+                <div class="staff-member fade-in-up" style="animation-delay: 0.2s">
+                    <div class="avatar">
+                        <img src="https://avatars.cloudflare.steamstatic.com/676f007f267538566f9f0ccaf4d89b387b6c4ff1_full.jpg" alt="llidehai3">
+                    </div>
+                    <div class="staff-info">
+                        <h4>GOAT666</h4>
+                        <p class="role">副服主|技术</p>
+                    </div>
+                </div>
+                <div class="staff-member fade-in-up" style="animation-delay: 0.2s">
+                    <div class="avatar">
+                        <img src="https://avatars.cloudflare.steamstatic.com/81559b38e6592c6fe06d6d9a15a20e6225332a2c_full.jpg" alt="llidehai3">
+                    </div>
+                    <div class="staff-info">
+                        <h4>氷中杯</h4>
+                        <p class="role">管理员</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="loading.js"></script>
+
+    <div class="loading-bar glass-effect">
+        <div class="progress-text">
+            <span id="status">正在获取服务器信息...</span>
+            <span id="percentage">0%</span>
+        </div>
+        <div class="progress-container">
+            <div class="progress" id="progress">
+                <div class="progress-glow"></div>
+            </div>
+        </div>
+    </div>
+    <div class="loading-tips">
+        <div class="tips-content" id="loadingTips">
+            🎇enjoy yourself~
+        </div>
+    </div>
+    <canvas id="audioCanvas" class="audio-visualizer"></canvas>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="fireworks.js"></script>
+    <audio id="bgMusic" loop autoplay>
+        <source src="2.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html> 
