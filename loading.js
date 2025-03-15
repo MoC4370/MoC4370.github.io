@@ -15,8 +15,10 @@ class LoadingScreen {
         this.tips = [
             "提示: 按 TAB 键可以查看计分板",
             "提示: 使(X)语音聊天可以和其他玩家交流",
+            "提示: 服务器内置许多乐器",
             "提示: 按 F3 可以切换第三人称视角",
             "提示: 进服务器请查看规则,否则被踢是常事",
+            "提示: 服务器音游mod正在开发中",
             "提示: 本服务器欢迎来自世界各地的玩家,请勿国家歧视"
         ];
 
@@ -25,31 +27,31 @@ class LoadingScreen {
                 title: "Imprisoned XII",
                 artist: "Ave Mujica",
                 cover: "assets/album-covers/109951170535267881.jpg",
-                file: "iii.mp3"
+                file: "assets/music/iii.mp3"
             },
             {
                 title: "春日影 (MyGO!!!!! ver.)",
                 artist: "MyGO!!!!!",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/s3s89/13/3955596740.png",
-                file: "cry.mp3"
+                file: "assets/music/cry.mp3"
             },
             {
                 title: "迷星叫",
                 artist: "MyGO!!!!!",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/s3s89/13/3955596740.png",
-                file: "mxj.mp3"
+                file: "assets/music/mxj.mp3"
             },
             {
                 title: "迷路日々",
                 artist: "MyGO!!!!!",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/s3s89/13/3955596740.png",
-                file: "mlr.mp3"
+                file: "assets/music/mlr.mp3"
             },
             {
                 title: "八月のif-",
                 artist: "Poppin'Party",
                 cover: "https://img1.kuwo.cn/star/albumcover/300/10/80/3178356656.jpg",
-                file: "byy.mp3"
+                file: "assets/music/byy.mp3"
             }
             
             // 可以添加更多歌曲
