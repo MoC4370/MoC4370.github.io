@@ -182,7 +182,8 @@ class LoadingScreen {
     }
 
     simulateFileLoading() {
-        const testFiles = [
+        const testFiles = ["加载中请稍后",
+                           "加群订阅合集更快哟"
         ];
         
         this.totalFiles = testFiles.length;
