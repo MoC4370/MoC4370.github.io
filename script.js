@@ -372,7 +372,7 @@ function preloadImage(url) {
 async function updateBackgroundImage() {
     try {
         // 使用新的图片API
-        const imageUrl = 'https://images.alphacoders.com/746/thumb-1920-746111.jpg';
+        const imageUrl = 'https://tse1-mm.cn.bing.net/th/id/OIP-C.AlDUYS1ldm2clZQTx4C5_wHaEK?rs=1&pid=ImgDetMain';
 
         // 创建新的背景元素
         const newBg = document.createElement('div');
