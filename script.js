@@ -227,11 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
         bgMusic.volume = 0.5;
         
         // 初始化时设置状态
-        if (!bgMusic.paused) {
-            musicPlayer.classList.add('music-playing');
-        } else {
-            musicPlayer.classList.add('music-paused');
-        }
         
         // 添加歌词相关功能
         function updateLyrics() {
@@ -372,7 +367,7 @@ function preloadImage(url) {
 async function updateBackgroundImage() {
     try {
         // 使用新的图片API
-        const imageUrl = 'https://tse1-mm.cn.bing.net/th/id/OIP-C.AlDUYS1ldm2clZQTx4C5_wHaEK?rs=1&pid=ImgDetMain';
+        const imageUrl = 'https://i.loli.net/2020/05/29/hdPI3iUBl4NugxJ.png';
 
         // 创建新的背景元素
         const newBg = document.createElement('div');
@@ -531,5 +526,3 @@ function updateLyrics() {
 }
 
 // 在音频加载完成后调用
-document.getElementById('bgMusic').addEventListener('loadeddata', updateLyrics);
-  
